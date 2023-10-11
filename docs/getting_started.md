@@ -13,7 +13,7 @@ apt-get install ros-<version>-cv-bridge ros-<version>-image-transport
 Then, clone, build and source AMBF's `ambf-2.0` branch.
 
 
-https://github.com/WPI-AIM/ambf/tree/ambf-2.0
+<https://github.com/WPI-AIM/ambf/tree/ambf-2.0>
 
 First time cloning:
 ```bash
@@ -32,13 +32,13 @@ Don't forget to build the repo using the instructions on AMBF's Readme
 ## 2. Clone this repo to your local machine OR use a Dockerfile
 
 #### Option 1: (Clone repo to your local machine)
-  Please refer to [README](./scripts/README.md) in the [scripts](./scripts) folder for instructions on installing the Python package for system-wide access.
+Please refer to [README](./scripts/README.md) in the [scripts](./scripts) folder for instructions on installing the Python package for system-wide access.
 
 #### Option 2: (Use Dockerfile)
 
-  You can alternatively use Dockerfiles to create Docker images by following the instructions here:
+You can alternatively use Dockerfiles to create Docker images by following the instructions here:
 
-  https://github.com/surgical-robotics-ai/docker_surgical_robotics_challenge
+<https://github.com/surgical-robotics-ai/docker_surgical_robotics_challenge>
 
 
 ## 3. Running the simulation
@@ -66,17 +66,16 @@ Don't forget to build the repo using the instructions on AMBF's Readme
   <img src=media/neede_without_thread.gif width="480"/>
   </p>
 
-
 ### 3a. The launch file:
-  To understand the launch file, visit the following link:
+To understand the launch file, visit the following link:
 
-  https://github.com/WPI-AIM/ambf/wiki/Selecting-Robots
+<https://github.com/WPI-AIM/ambf/wiki/Selecting-Robots>
 
 ### 3b. Simulated Cameras
-  The simulated camera(s) is defined in the World file ([`world_stereo.yaml`](./ADF/world/world_stereo.yaml)) which is set in the [`launch.yaml`](./launch.yaml) file.
-  To enable the camera(s) to publish the scene image or depth data, follow the instructions on this page:
+The simulated camera(s) is defined in the World file ([`world_stereo.yaml`](./ADF/world/world_stereo.yaml)) which is set in the [`launch.yaml`](./launch.yaml) file.
+To enable the camera(s) to publish the scene image or depth data, follow the instructions on this page:
 
-  https://github.com/WPI-AIM/ambf/wiki/Camera-feed-and-depth-camera
+<https://github.com/WPI-AIM/ambf/wiki/Camera-feed-and-depth-camera>
 
 ### 3c. Camera Coordinate frames
   To better understand the different camera coordinate frames and the difference between the AMBF and the Opencv camera convention, please refer to [camera_convention.md](./docs/camera_conventions.md)
@@ -87,7 +86,7 @@ Don't forget to build the repo using the instructions on AMBF's Readme
 ### 3d. Launch Arguments:
   The launch arguments provided above e.g. (`-l 0,1,3,4,14,15 -p 200 -t 1`) define the launch file, the list of ADF files to load, simulation frequency and time-stepping technique. For a full list of arguments, please refer to this link:
 
-  https://github.com/WPI-AIM/ambf/wiki/Command-Line-Arguments
+<https://github.com/WPI-AIM/ambf/wiki/Command-Line-Arguments>
 
 # Interacting with the simulation
 
@@ -100,9 +99,9 @@ The code in the scripts folder allows the dVRK MTMs or Geomagic Touch / Phantom 
 
 With the simulation already running, run the `dvrk-ros` application for the `dVRK MTMs` or the ROS application for the `Geomagic Touch/Phantom Omni`. You can find the relevant code for them here:
 
-**a. https://github.com/jhu-dvrk/dvrk-ros** (dvrk-ros)
+**a. <https://github.com/jhu-dvrk/dvrk-ros>** (dvrk-ros)
 
-**b. https://github.com/WPI-AIM/ros_geomagic** (geomagic_touch/phantom_omni)
+**b. <https://github.com/WPI-AIM/ros_geomagic>** (geomagic_touch/phantom_omni)
 
 Then run one of the corresponding python scripts:
 

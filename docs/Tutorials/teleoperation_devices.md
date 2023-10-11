@@ -3,7 +3,7 @@ A supplemental specification for teleoperation simulated robots using external c
 
 ## Install drivers
 
-If you have questions with respect to hardware driver installation, please check [the following repository](https://github.com/JackHaoyingZhou/daVinci_simulation).
+If you have questions with respect to hardware driver installation, please check <https://github.com/JackHaoyingZhou/daVinci_simulation>
 
 In `src/razer_hydra` and `src/ros_geomagic` folders, detailed instructions are provided.
 
@@ -26,7 +26,7 @@ roslaunch geomagic_control geomagic_headless.launch
 ### MTM
 
 It would require some acquaintance of dVRK and/or CRTK as prerequisite. Please check the following wiki for more information if you are interested:
-https://github.com/jhu-dvrk/sawIntuitiveResearchKit/wiki/FirstSteps
+<https://github.com/jhu-dvrk/sawIntuitiveResearchKit/wiki/FirstSteps>
 
 If you have successfully installed dVRK and have physical MTMs, please run following command to enable MTM firstly:
 
@@ -42,7 +42,7 @@ rosrun dvrk_robot dvrk_console_json -j <json file for MTMs>
 ./run_environment.sh
 ```
 
-** If you install the integrated environment from https://github.com/JackHaoyingZhou/daVinci_simulation, then, please run
+If you install the integrated environment from <https://github.com/JackHaoyingZhou/daVinci_simulation>, then, please run
 
 ```bash
 ./run_environment0.sh
