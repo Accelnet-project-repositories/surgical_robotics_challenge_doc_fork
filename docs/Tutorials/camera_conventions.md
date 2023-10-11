@@ -22,7 +22,7 @@ The virtual environment includes a pair of stereo cameras that are fixed with re
 ```
 
 <p align="center">
-<img src="./media/camera_frames.png" width="600" />
+<img src="../media/camera_frames.png" width="600" />
 </p>
 
 
@@ -30,7 +30,7 @@ The virtual environment includes a pair of stereo cameras that are fixed with re
 
 The intrinsic parameters of cameras in AMBF are established in OpenGL fashion using the vertical field view angle (`fva`) which describes the perspective frustum. The intrinsic matrix (I) can be calculated through the following equations: 
 
-<img src="./media/intrinsic_camera_matrix.png" />
+<img src="../media/intrinsic_camera_matrix.png" />
 
 Where `fx` and `fy` are the focal length in pixels in the x and y directions. `W` and `H` are the width and height of the image produced in pixels. `cx` and `cy` describe the x and y position of the camera principal point. Extrinsics information is obtained from the relative transformation between the cameras and world frame. 
 
@@ -49,7 +49,7 @@ where `T_CN_AMBF` is the extrinsic camera matrix.
 
 
 <p align=center>
-<img src="./media/camera_convention.png" width="640"/>
+<img src="../media/camera_convention.png" width="640"/>
 </p>
 
 ## Examples
@@ -57,5 +57,5 @@ where `T_CN_AMBF` is the extrinsic camera matrix.
 A full example of how to use these transformation matrices to project 3D points from the needle into the image can be found in [project_needle_points.py](./../scripts/surgical_robotics_challenge/examples/project_needle_pts.py). 
 
 <p align=center>
-<img src="./media/project_img_pts.png" width="480"  />
+<img src="../media/project_img_pts.png" width="480"  />
 </p>

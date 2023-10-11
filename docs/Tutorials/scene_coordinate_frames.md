@@ -4,7 +4,7 @@
 
 The base and end-effector frames for PSMs are assigned according to the dVRK Manual found [here](https://research.intusurg.com/index.php/DVRK:Docs:Main). You may need to log in to view the document. Regardless, the frames are shown in the figure below:
 
-<img src="./media/PSM Frames.svg" />
+<img src="../media/PSM Frames.svg" />
 
 
 Calling the `measured_cp()` method in the [psm_arm.py](https://github.com/surgical-robotics-ai/surgical_robotics_challenge/blob/master/scripts/surgical_robotics_challenge/psm_arm.py) file return the Pose of the tip frame in the base frame shown above. To get the pose of the tip in the world frame, the pose of the base in the world (simulation world) frame is required, which can be retrieved using `get_T_b_w()` method.
@@ -13,7 +13,7 @@ Calling the `measured_cp()` method in the [psm_arm.py](https://github.com/surgic
 
 A kinematic frame called "Camera Frame" is placed midway between the two PSMs in the scene as shown in the figure below.
 
-<img src="./media/Scene Frames.svg" />
+<img src="../media/Scene Frames.svg" />
 
 The two actual cameras, namely "cameraL" and "cameraR" are parented to this kinematic "Camera Frame" so that by changing the pose of this single kinematic object, the two cameras can be moved. The [camera_conventions.md](https://github.com/surgical-robotics-ai/surgical_robotics_challenge/blob/master/docs/camera_conventions.md) document explains the frame convention of AMBF cameras.
 
@@ -25,13 +25,13 @@ To mimic the da Vinci ECM, [ecm_arm.py](https://github.com/surgical-robotics-ai/
 
 The needle frame is shown in the figure below.
 
-<img src="./media/Needle Frame.svg" />
+<img src="../media/Needle Frame.svg" />
 
 # ENTRY / EXIT FRAMES
 
 The entry and exit frames are shown in the figure below.
 
-<img src="./media/Entry and Exit Frame.svg" />
+<img src="../media/Entry and Exit Frame.svg" />
 
 # NOTE:
 All the coordinate frames discussed above and the associated dimensions can be viewed using the blender scene files in this [folder](https://github.com/surgical-robotics-ai/surgical_robotics_challenge/tree/master/Blender).

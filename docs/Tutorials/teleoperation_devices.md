@@ -1,10 +1,9 @@
-# A supplemental specification for teleoperation using AMBF and external control devices
-
-# 1. Teleoperation devices
+# Teleoperation devices
+A supplemental specification for teleoperation simulated robots using external control devices
 
 ## Install drivers
 
-If you have questions with respect to hardware driver installation, please check https://github.com/JackHaoyingZhou/daVinci_simulation.
+If you have questions with respect to hardware driver installation, please check [the following repository](https://github.com/JackHaoyingZhou/daVinci_simulation).
 
 In `src/razer_hydra` and `src/ros_geomagic` folders, detailed instructions are provided.
 
@@ -109,7 +108,9 @@ MTML-PSM1-MTMR-PSM2 teleop:
 
 ### Geomagic
 
-<img src="./media/geomagic_buttons.jpg" />
+<p align="center">
+<img src="../media/geomagic_buttons.jpg" width="400"/>
+</p>
 
 | Button Motion               | Action            |
 | --------------------------- | ----------------- |
@@ -119,7 +120,9 @@ MTML-PSM1-MTMR-PSM2 teleop:
 
 ### Razer Hydra
 
-<img src="./media/razer_hydra_buttons.jpg" />
+<p align="center">
+<img src="../media/razer_hydra_buttons.jpg" width="400" />
+</p>
 
 | Button Motion                                                | Action                                                                                                                   |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
