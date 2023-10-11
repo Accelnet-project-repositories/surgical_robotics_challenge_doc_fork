@@ -1,8 +1,8 @@
 # Camera coordinate frames
 
+The following document explains important coordinates frames used on the Surgical robotics challenge.
 
-
-## Important coordinate frames
+## Stereo rig coordinate frames
 
 The virtual environment includes a pair of stereo cameras that are fixed with respect to a camera frame. When commanding the virtual camera arm, the relation between the cameras and the frame will remain fixed, i.e. , transformations `T_FL` and `T_FR` do not change when moving the virtual ECM.  Finding a transformation between the needle local coordinate frame and the left image plane can be accomplish via the following block of code:
 
@@ -21,21 +21,23 @@ The virtual environment includes a pair of stereo cameras that are fixed with re
     T_LN = inv(T_WL).dot(T_WN)
 ```
 
+<p align="center">
+<img src="./media/camera_frames.png" width="600" />
+</p>
 
-<img src="./figures/camera_frames.png" width="600" />
 
 ## Intrinsic parameter matrix.
 
 The intrinsic parameters of cameras in AMBF are established in OpenGL fashion using the vertical field view angle (`fva`) which describes the perspective frustum. The intrinsic matrix (I) can be calculated through the following equations: 
 
-<img src="./figures/intrinsic_camera_matrix.png" />
+<img src="./media/intrinsic_camera_matrix.png" />
 
 Where `fx` and `fy` are the focal length in pixels in the x and y directions. `W` and `H` are the width and height of the image produced in pixels. `cx` and `cy` describe the x and y position of the camera principal point. Extrinsics information is obtained from the relative transformation between the cameras and world frame. 
 
 
 The camera parameters, such as `fva`, `near` and `far` plane, are found in its ADF definition. For this repo, the cameras are defined in the [World](./../ADF/world/world_stereo.yaml) file. The parameters `cx` and `cy` depend upon the image size of the published camera stream. It defaults to `640 x 480` but can be changed by setting an appropriate field as shown [here](https://github.com/surgical-robotics-ai/surgical_robotics_challenge/blob/master/ADF/world/world_stereo.yaml#L57), .
 
-## Difference between AMBF and Opencv camera conventions 
+## AMBF vs Opencv camera conventions 
 
 To use Opencv 3D calibration functions, it is necessary to convert between the AMBF and the Opencv camera conventions. As seen in the figure below, the AMBF camera frames has the minus X axis towards the image plane, Y towards the right (horizontal axis) and Z upwards (vertical axis). On the other hand, Opencv has the Z axis towards the image plane, the X axis toward the right and the minus Y axis upward. Conversion, from the AMBF convention to the OPENCV convention can be achieved with
 
@@ -46,12 +48,14 @@ To use Opencv 3D calibration functions, it is necessary to convert between the A
 where `T_CN_AMBF` is the extrinsic camera matrix.
 
 
-<img src="./figures/camera_convention.png" width="640"  />
-
+<p align=center>
+<img src="./media/camera_convention.png" width="640"/>
+</p>
 
 ## Examples
 
 A full example of how to use these transformation matrices to project 3D points from the needle into the image can be found in [project_needle_points.py](./../scripts/surgical_robotics_challenge/examples/project_needle_pts.py). 
 
-<img src="./figures/project_img_pts.png" width="640"  />
-
+<p align=center>
+<img src="./media/project_img_pts.png" width="480"  />
+</p>

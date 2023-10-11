@@ -109,23 +109,23 @@ MTML-PSM1-MTMR-PSM2 teleop:
 
 ### Geomagic
 
-<img src="./figures/geomagic_buttons.jpg" />
+<img src="./media/geomagic_buttons.jpg" />
 
 | Button Motion               | Action            |
-|-----------------------------|-------------------|
+| --------------------------- | ----------------- |
 | push/hold on clutch button  | Clutch            |
 | push clutch button twice    | Switch PSM arm    |
 | push/hold on gripper button | close the gripper |
 
 ### Razer Hydra
 
-<img src="./figures/razer_hydra_buttons.jpg" />
+<img src="./media/razer_hydra_buttons.jpg" />
 
-| Button Motion                                                | Action                                                                                                                    |
-|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| push/hold on clutch button                                   | Clutch                                                                                                                    |
-| push/hold on reset button and clutch button at the same time | Reset your Razer Hydra base frame the same as your current pose if you feel uncomfortable with default Hydra frame setup  |
-| push/hold on gripper button                                  | close the gripper                                                                                                         |
+| Button Motion                                                | Action                                                                                                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| push/hold on clutch button                                   | Clutch                                                                                                                   |
+| push/hold on reset button and clutch button at the same time | Reset your Razer Hydra base frame the same as your current pose if you feel uncomfortable with default Hydra frame setup |
+| push/hold on gripper button                                  | close the gripper                                                                                                        |
  
 
 # Reference

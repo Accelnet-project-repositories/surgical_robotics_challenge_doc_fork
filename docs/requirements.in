@@ -1,0 +1,4 @@
+mkdocs
+mkdocstrings[python]
+markdown-include      # Include functionality in markdown files
+mkdocs-bootswatch     # Theme
