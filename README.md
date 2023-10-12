@@ -7,7 +7,9 @@
 Open simulation environment for surgical robotics. For more information regarding the challenge, please visit [Surgical Robotics Challenge 2021-2022](https://surgical-robotics-ai.github.io/surgical-robotics-challenge/challenge-2021.html) or [Surgical Robotics Challenge 2023-2024](https://surgical-robotics-ai.github.io/surgical-robotics-challenge-2023/challenge-2023.html).
 
 
-[Getting started](#getting_started) | [Documentation](https://surgical-robotics-challenge.readthedocs.io/en/latest/) | [Tutorials](https://surgical-robotics-challenge.readthedocs.io/en/latest/Tutorials/) | [Paper](https://par.nsf.gov/servlets/purl/10352800)
+#### [Getting started](#getting_started) | [Documentation](https://surgical-robotics-challenge.readthedocs.io/en/latest/) | [Tutorials](https://surgical-robotics-challenge.readthedocs.io/en/latest/Tutorials/) | [Paper](https://par.nsf.gov/servlets/purl/10352800)
+
+------------------
 
 
 # [Discussions Forum](https://github.com/surgical-robotics-ai/surgical_robotics_challenge/discussions)
