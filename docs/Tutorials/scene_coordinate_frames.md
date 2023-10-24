@@ -33,5 +33,5 @@ The entry and exit frames are shown in the figure below.
 
 <img src="../media/Entry and Exit Frame.svg" />
 
-# NOTE:
+### Note:
 All the coordinate frames discussed above and the associated dimensions can be viewed using the blender scene files in this [folder](https://github.com/surgical-robotics-ai/surgical_robotics_challenge/tree/master/Blender).

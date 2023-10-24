@@ -3,14 +3,18 @@ site_dir: docs
 use_directory_urls: false
 
 theme:
-  name: slate
+  name: spacelab
   highlightjs: true
 
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - API: api.md
-  - Tutorials: Tutorials/
+  - Python API: python_api.md
+  - Tutorials:
+      - Overview: "./Tutorials/README.md"
+      - 1. Camera Conventions: "./Tutorials/camera_conventions.md"
+      - 2. Coordinate frames: "./Tutorials/scene_coordinate_frames.md"
+      - 3. Teleoperation: "./Tutorials/teleoperation_devices.md"
 
 copyright: LCSR, Johns Hopkins University.
 
