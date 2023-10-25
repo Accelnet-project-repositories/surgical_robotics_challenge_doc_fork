@@ -48,10 +48,20 @@ from PyKDL import Frame, Rotation, Vector, Twist
 import time
 import rospy
 from threading import Thread
-
+from surgical_robotics_challenge.simulation_manager import SimulationManager
 
 class ECM:
-    def __init__(self, simulation_manager, name):
+    """Handle to virtual ECM 
+
+    Parameters
+    ----------
+    simulation_manager : SimulationManager
+        Simulation manager instance 
+    name : str
+        Unique name for handle 
+    """
+
+    def __init__(self, simulation_manager: SimulationManager, name: str):
         self.simulation_manager = simulation_manager
         self.name = name
         self.camera_handle = self.simulation_manager.get_obj_handle(name)

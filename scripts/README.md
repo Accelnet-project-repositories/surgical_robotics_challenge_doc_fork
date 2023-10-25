@@ -54,7 +54,6 @@ The module names should be self-evident but a brief description is provided belo
 
 # Example scripts
 
-## General examples 
 | #   | Script Name                 | Description                                                                            |
 | --- | --------------------------- | -------------------------------------------------------------------------------------- |
 | 1   | `gui_based_control.py`      | Uses GUI-based sliders to control the Cartesian pose of the PSMs.                      |
@@ -71,6 +70,7 @@ The module names should be self-evident but a brief description is provided belo
 | 1   | `mtm_multi_psm_control.py`      | Uses the `mtm_device.py` and multiple `psm_arm.py` to bind a single MTM to multiple PSMs. Only one PSM is controllable at a time and the next PSM can be selected by quickly double-tapping the clutch foot pedal. Run the script with `-h` to see allowed command-line options.                   |
 | 2   | `geomagic_multi_psm_control.py` | Uses the `geomagic_device.py` and multiple `psm_arm.py` to bind a single Geomagic to multiple PSMs. Only one PSM is controllable at a time and the next PSM can be selected by quickly double-tapping the grey button on the device. Run the script with `-h` to see allowed command-line options. |
 | 3   | `razer_multi_psm_control.py`    | Uses the `razer_device.py` and multiple `psm_arm.py` to bind a single Razer Hydra to multiple PSMs. Not tested fully.                                                                                                                                                                              |
+
 ### 4a. Input Devices (teleoperation/input_devices)
 
 | #   | Script Name          | Description                                                                                        |

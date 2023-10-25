@@ -45,10 +45,43 @@
 from surgical_robotics_challenge.kinematics.psmIK import *
 from PyKDL import Frame, Rotation, Vector, Twist
 import time
+from surgical_robotics_challenge.simulation_manager import SimulationManager
 
+def get_random_ingredients(number: int, kind:str=None):
+    """
+    Return a list of random ingredients as strings.
+
+    Parameters
+    ----------
+    number: int
+    kind: str
+        type of ingredients to return. If None, return a random type of ingredient.
+
+    """
+
+    return ["shells", "gorgonzola", "parsley"]
 
 class Camera:
-    def __init__(self, simulation_manager, name):
+    """Handle to virtual camera
+
+    examples:
+    ```
+    camera = Camera(simulation_manager, "camera")
+    ```
+
+    Parameters
+    ----------
+    simulation_manager : SimulationManager
+        Simulation manager instance 
+    name : str
+        Unique name for handle 
+    """
+
+
+    def __init__(self, simulation_manager: SimulationManager, name: str):
+        """ Constructor
+
+        """
         self.simulation_manager = simulation_manager
         self.name = name
         self.camera_handle = self.simulation_manager.get_obj_handle(name)
@@ -64,6 +97,9 @@ class Camera:
         self._last_jp = np.zeros([self._num_joints])
 
     def is_present(self):
+        """ Is present
+
+        """
         if self.camera_handle is None:
             return False
         else:

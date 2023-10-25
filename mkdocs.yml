@@ -1,5 +1,8 @@
 site_name: Surgical robotics challenge
 site_dir: docs
+
+# Needed to avoid changes in the relative paths
+# https://stackoverflow.com/questions/48063231/mkdocs-hyperlink-not-working-in-static-pages
 use_directory_urls: false
 
 theme:
@@ -9,7 +12,9 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Python API: python_api.md
+  - Python API:
+      - overview: python_api/python_package_overview.md
+      - API reference: python_api/python_api.md
   - Tutorials:
       - Overview: "./Tutorials/README.md"
       - 1. Camera Conventions: "./Tutorials/camera_conventions.md"
@@ -22,3 +27,13 @@ copyright: LCSR, Johns Hopkins University.
 markdown_extensions:
   - markdown_include.include:
       base_path: .
+  - toc:
+      permalink: "#"
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: numpy
