@@ -1,5 +1,5 @@
 site_name: Surgical robotics challenge
-site_dir: docs
+site_dir: site 
 
 # Needed to avoid changes in the relative paths
 # https://stackoverflow.com/questions/48063231/mkdocs-hyperlink-not-working-in-static-pages
